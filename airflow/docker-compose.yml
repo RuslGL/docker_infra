@@ -6,8 +6,8 @@ services:
     image: postgres
     # Задаем глобальные переменные для доступа к PG
     environment:
-      - POSTGRES_PASSWORD=ghwf94hfw8
-      - POSTGRES_USER=airflow
+      - POSTGRES_PASSWORD=qwerty12345
+      - POSTGRES_USER=ruslan_gl
       - POSTGRES_DB=airflow
     restart: always
     ports:
