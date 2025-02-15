@@ -6,8 +6,8 @@ services:
     image: postgres
     # Задаем глобальные переменные для доступа к PG
     environment:
-      - POSTGRES_PASSWORD=qwerty12345
-      - POSTGRES_USER=ruslan_gl
+      - POSTGRES_PASSWORD=tryit8734
+      - POSTGRES_USER=airflow
       - POSTGRES_DB=airflow
     restart: always
     ports:
@@ -33,10 +33,6 @@ services:
       - ./airflow/plugins:/root/airflow/plugins
       - logs:/usr/local/airflow/logs
 
-# Задав таким образом вольюмы
-# нам не нужно заботиться о том где будет папка
-# В которой они будут лежать
-# Для баз данных и логов такой способ более простой и безопасный
 volumes:
   pgdata_bd_airflow:
   logs:
